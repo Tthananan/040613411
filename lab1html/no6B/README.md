@@ -5,4 +5,12 @@ Name Thananan Jomjindarat  (CS)
 
 
 
-![WebPage](https://github.com/Tthananan/WebDev/assets/139062535/b06bf08b-aba3-422a-9bfc-b68ab828f6b9)
+index.html
+
+
+![1689595393819](https://github.com/Tthananan/040613411/assets/139062535/703fa09d-2056-46e7-afd9-b56a46675195)
+
+
+t1.html
+
+![1689595438071](https://github.com/Tthananan/040613411/assets/139062535/a23df2ff-c7cb-4d21-92fd-e0160628e122)
