@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>แบบฟอร์มจองทัวร์</h1>
+
+    <div style="border: 2px solid;
+    padding: 10px; 
+    overflow: auto; 
+    width: 500px;
+    height: auto;">
+
+    <form action="form-echo.php" >
+        <fieldset>
+            <legend>ข้อมูลทั่วไป</legend>
+
+            <label>ชื่อ-สกุล : <br>
+                <input type="text" required 
+                name="usernamethai"
+                placeholder="กรอกชื่อ-สกุล"
+                pattern="^[ก-๏\s]+$"> *
+            </label>
+            <br>
+
+            <label>Email : <br>
+                <input type="email" required
+                name="email"
+                placeholder=""
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"> *
+            </label>
+            <br>
+
+            <label>โทรศัพท์ : <br>
+                <input type="tel" required
+                name="phone"
+                placeholder=""
+                value="+66"
+                pattern="\+66[7-9]{1}[0-9]{8}"> *
+            </label>
+            <br>
+
+            <label>ที่อยู่ : <br>
+                <textarea name="address" 
+                cols="45" 
+                rows="5">
+                </textarea>
+            </label>
+            <br>
+
+            รหัสไปรษณีย์ : 
+                <input type="text"
+                size="5"
+                name="code"
+                placeholder=""
+                pattern="[0-9]{5}">
+            <br>
+
+            <p>รูปผู้จอง : <input type="file"
+                name="image" 
+                value="Choose file"
+                accept="image/*"> 
+            
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>ข้อมูลเข้าสู่ระบบ</legend>
+
+            <label>Username : <br>
+                <input type="text" 
+                name="usernameeng"
+                placeholder=""
+                pattern="[A-Za-z0-9_]{8,}"> 
+            </label>
+            <br>
+            <i>ประกอบด้วยตัวเลข ตัวอักษร หรือ _ ตั้งแต่ 8 ตัวขึ้นไป</i>
+            <br><br>
+
+            <label>Password : <br>
+                <input type="password" 
+                name="pwd"
+                placeholder=""
+                pattern="{8,}">
+            </label> 
+            <br>
+            <i>ประกอบด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป</i>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>ข้อมูลทัวร์ที่ต้องการ</legend>
+
+            <label>แพคเก็จทัวร์ :
+                <select name="package">
+                    <option value="" selected="selected">--select--</option>
+                    <option value="japan">ญี่ปุ่น</option>
+                    <option value="france">ฝรั่งเศส</option>
+                    <option value="italy">อิตาลี</option>
+                </select>
+            </label><br>
+
+
+            <label>วันที่เดินทาง :</label>
+            <input type="date" 
+            name="traveldate">
+            <br>
+
+            <label>จำนวนผู้เดินทาง :
+                <input type="number"
+                min="1"
+                max="10"
+                size="5"
+                name="traveler">
+            </label>
+            <br>
+
+            <label>เน้นการท่องเที่ยวแบบใด? <br>
+                <input type="checkbox"
+                name="travel"
+                value="shopping"> ชอปปิ้ง <br>
+
+                <input type="checkbox"
+                name="travel"
+                value="nature"> ธรรมชาติ <br>
+
+                <input type="checkbox"
+                name="travel"
+                value="sea"> ทะเล
+            </label>
+
+        </fieldset>
+
+        <p>ยอมรับเงื่อนไขและข้อตกลง
+            <input type="radio"
+            name="choose"
+            value="agree" 
+            checked="checked"/> I agree 
+
+            <input type="radio"
+            name="choose"
+            value="disagree" /> I disagree 
+
+            &nbsp;
+
+            <input type="submit"
+            value="จอง">
+
+        </p>
+
+    </form>
+
+</div>
+</body>
+</html>
